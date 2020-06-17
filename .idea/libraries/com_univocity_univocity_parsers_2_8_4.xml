@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="com.univocity:univocity-parsers:2.8.4" type="repository">
+    <properties maven-id="com.univocity:univocity-parsers:2.8.4" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/univocity-parsers-2.8.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
