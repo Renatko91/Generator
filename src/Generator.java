@@ -12,9 +12,13 @@ public class Generator {
 
     public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException {
         SettingReport setting = new SettingReport(args[0]);
-        DataOfReport data = new DataOfReport(args[1]);
+        DataOfReport data = new DataOfReport(args[1],
+                setting.getSettingValue("Номер"),
+                setting.getSettingValue("Дата"),
+                setting.getSettingValue("ФИО")
+        );
+
         OutputStreamWriter fw = new OutputStreamWriter(new FileOutputStream(args[2], false), "UTF-16");
-        //FileWriter fw = new FileWriter(args[2]);
 
         ArrayList<String> numberList = data.getData1();
         ArrayList<String> dateList = data.getData2();
